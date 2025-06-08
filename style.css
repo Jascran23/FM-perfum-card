@@ -1,0 +1,155 @@
+/*
+
+- Green 500: hsl(158, 36%, 37%)
+- Green 700: hsl(158, 42%, 18%)
+
+### Neutral
+
+- Black: hsl(212, 21%, 14%)
+- Grey: hsl(228, 12%, 48%)
+- Cream: hsl(30, 38%, 92%)
+- White: hsl(0, 0%, 100%)
+
+*/
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(30, 38%, 92%);
+    padding: 2%;
+}
+
+
+.card{
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);
+}
+
+.clear{
+    clear: both;
+}
+
+.imagem-mobile{
+    display: none;
+}
+
+.imagem-desktop{
+    width: 50%;
+    float: left;
+    border-radius: 10px 0 0 10px
+}
+
+.container-text{
+    width: 50%;
+    float: right;
+    padding: 30px;
+}
+
+.container-text > h3{
+    color: hsl(158, 42%, 18%);
+    font-weight: 500;
+}
+
+.container-text > h1{
+    margin-top: 20px;
+    font-size: 35px;
+    line-height: 35px;
+    font-family: 'Fraunces',serif;
+    font-weight: 700;
+}
+
+.container-text > p{
+    margin-top: 30px;
+}
+
+.container-preco{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+   
+}
+
+.container-preco h1{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 35px;
+    float: left;
+    color: hsl(158, 36%, 37%);
+    width: 50%;
+}
+
+.container-preco h4{
+    display: flex;
+    width: 50%;
+    top: -50%;
+    transform: translateY(50%);
+    float: right;
+    padding-left: 15px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+
+button{
+    margin-top: 35px;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    border: 0;
+    background:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+button > span{
+    margin-right: 10px;
+}
+
+button:hover{
+    background: hsl(158, 42%, 18%);
+}
+
+
+@media screen and (max-width:650px){
+    
+    .card{
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+        background: hsl(0, 0%, 100%);
+    }
+
+    .imagem-desktop{
+        display:none;
+    }
+
+    .imagem-mobile{
+        display: block;
+        width: 100%;
+    }
+
+    .container-text{
+        
+    }
+}
