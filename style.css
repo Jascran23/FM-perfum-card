@@ -103,7 +103,7 @@ main{
     top: -50%;
     transform: translateY(50%);
     float: right;
-    padding-left: 15px;
+    padding-left: 8%;
     font-weight: 500;
     color: hsl(228, 12%, 48%);
 }
@@ -150,6 +150,14 @@ button:hover{
     }
 
     .container-text{
-        
+    width: 100%;
+    display: block;
+    padding: 30px;
+    }
+
+    .container-preco h4{
+   
+    padding-left: 1%;
+
     }
 }
